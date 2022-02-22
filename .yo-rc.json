@@ -1,0 +1,22 @@
+{
+  "generator-template-ui5-project": {
+    "projectname": "AppmyUI5",
+    "namespaceUI5": "com.app",
+    "platform": "Static webserver",
+    "viewtype": "XML",
+    "ui5libs": "Content delivery network (OpenUI5)",
+    "newdir": false,
+    "codeassist": true,
+    "namespaceURI": "com/app",
+    "opa5pos": [
+      "Main"
+    ],
+    "opa5Journeys": [
+      "Main"
+    ],
+    "uimodules": [
+      "uimodule"
+    ],
+    "setupCompleted": true
+  }
+}
