@@ -1,11 +1,110 @@
-<mvc:View controllerName="com.app.AppmyUI5.controller.MainView" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+<mvc:View controllerName="com.app.AppmyUI5.controller.MainView"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:c="sap.ui.core"
+    xmlns="sap.m">
     <Shell id="shell">
         <App id="app">
+
             <pages>
                 <Page id="page" title="{i18n>title}">
                     <content />
+                    <Text maxLines="{modelo1>/p3}" renderWhitespace="false" text="{modelo1>/p1}" textAlign="Begin" textDirection="Inherit" width="" wrapping="true" wrappingType="Normal">
+
+                    </Text>
+                    <Button id="Boton1" activeIcon="" enabled="{= ${modelo1>/p6} === 'si' ? true : false }" icon="" iconDensityAware="true" iconFirst="true" text="Binding condición JS" textDirection="Inherit" type="Default" width="" press="onPress">
+
+                    </Button>
+                    <Button activeIcon="" enabled="{= !${modelo1>/p5} }" icon="" iconDensityAware="true" iconFirst="true" text="Binding negación" textDirection="Inherit" type="Default" width="" press="onPress1">
+                        <customData>
+                            <c:CustomData key="1" value="2" writeToDom="false">
+
+                            </c:CustomData>
+                        </customData>
+                    </Button>
+
+                    <Table alternateRowColors="false" backgroundDesign="Translucent" contextualWidth="Inherit" fixedLayout="true" popinLayout="Block" showOverlay="false" items="{path: 'Tabla>/'}">
+                        <columns>
+                            <Column demandPopin="false" hAlign="Begin" mergeDuplicates="false" mergeFunctionName="getText" minScreenWidth="" popinDisplay="Block" styleClass="" vAlign="Inherit" visible="true" width="">
+                                <Text maxLines="" renderWhitespace="false" text="Columna 1" textAlign="Begin" textDirection="Inherit" width="" wrapping="true" wrappingType="Normal">
+
+                                </Text>
+                            </Column>
+                            <Column demandPopin="false" hAlign="Begin" mergeDuplicates="false" mergeFunctionName="getText" minScreenWidth="" popinDisplay="Block" styleClass="" vAlign="Inherit" visible="true" width="">
+                                <Text maxLines="" renderWhitespace="false" text="Columna 2" textAlign="Begin" textDirection="Inherit" width="" wrapping="true" wrappingType="Normal">
+
+                                </Text>
+                            </Column>
+                        </columns>
+                        <items>
+                            <ColumnListItem vAlign="Inherit">
+                                <cells>
+                                    <Text maxLines="" renderWhitespace="false" text="{Tabla>f1}" textAlign="Begin" textDirection="Inherit" width="" wrapping="true" wrappingType="Normal">
+
+                                    </Text>
+                                    <Text maxLines="" renderWhitespace="false" text="{Tabla>f2}" textAlign="Begin" textDirection="Inherit" width="" wrapping="true" wrappingType="Normal">
+
+                                    </Text>
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+
+                    <Table alternateRowColors="false" backgroundDesign="Translucent" contextualWidth="Inherit" fixedLayout="true" popinLayout="Block" showOverlay="false" items="{path: 'Tabla>/'}">
+                        <columns>
+                            <Column demandPopin="false" hAlign="Begin" mergeDuplicates="false" mergeFunctionName="getText" minScreenWidth="" popinDisplay="Block" styleClass="" vAlign="Inherit" visible="true" width="">
+                                <Text maxLines="" renderWhitespace="false" text="Columna 1" textAlign="Begin" textDirection="Inherit" width="" wrapping="true" wrappingType="Normal">
+
+                                </Text>
+                            </Column>
+                            <Column demandPopin="false" hAlign="Begin" mergeDuplicates="false" mergeFunctionName="getText" minScreenWidth="" popinDisplay="Block" styleClass="" vAlign="Inherit" visible="true" width="">
+                                <Text maxLines="" renderWhitespace="false" text="Columna 2" textAlign="Begin" textDirection="Inherit" width="" wrapping="true" wrappingType="Normal">
+
+                                </Text>
+                            </Column>
+                        </columns>
+                        <items>
+                            <ColumnListItem vAlign="Inherit">
+                                <cells>
+                                    <Text maxLines="" renderWhitespace="false" text="{Tabla>f1}" textAlign="Begin" textDirection="Inherit" width="" wrapping="true" wrappingType="Normal">
+
+                                    </Text>
+                                    <Text maxLines="" renderWhitespace="false" text="{Tabla>f2}" textAlign="Begin" textDirection="Inherit" width="" wrapping="true" wrappingType="Normal">
+
+                                    </Text>
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                    <Table alternateRowColors="false" backgroundDesign="Translucent" contextualWidth="Inherit" fixedLayout="true" popinLayout="Block" showOverlay="false" items="{tablaOData>/Categories}">
+                        <columns>
+                            <Column demandPopin="false" hAlign="Begin" mergeDuplicates="false" mergeFunctionName="getText" minScreenWidth="" popinDisplay="Block" styleClass="" vAlign="Inherit" visible="true" width="">
+                                <Text maxLines="" renderWhitespace="false" text="Columna 1" textAlign="Begin" textDirection="Inherit" width="" wrapping="true" wrappingType="Normal">
+
+                                </Text>
+                            </Column>
+                            <Column demandPopin="false" hAlign="Begin" mergeDuplicates="false" mergeFunctionName="getText" minScreenWidth="" popinDisplay="Block" styleClass="" vAlign="Inherit" visible="true" width="">
+                                <Text maxLines="" renderWhitespace="false" text="Columna 2" textAlign="Begin" textDirection="Inherit" width="" wrapping="true" wrappingType="Normal">
+
+                                </Text>
+                            </Column>
+                        </columns>
+                        <items>
+                            <ColumnListItem vAlign="Inherit">
+                                <cells>
+                                    <Text maxLines="" renderWhitespace="false" text="{tablaOData>CategoryName}" textAlign="Begin" textDirection="Inherit" width="" wrapping="true" wrappingType="Normal">
+
+                                    </Text>
+                                    <Text maxLines="" renderWhitespace="false" text="" textAlign="Begin" textDirection="Inherit" width="" wrapping="true" wrappingType="Normal">
+
+                                    </Text>
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+
                 </Page>
             </pages>
         </App>
     </Shell>
 </mvc:View>
+

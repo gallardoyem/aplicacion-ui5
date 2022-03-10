@@ -1,11 +1,14 @@
 sap.ui.define(
     ["sap/ui/core/mvc/Controller", "sap/ui/core/routing/History", "sap/ui/core/UIComponent", "com/app/AppmyUI5/model/formatter"],
     /**
+sap.ui.define(
+    ["sap/ui/core/mvc/Controller", "sap/ui/core/routing/History", "sap/ui/core/UIComponent", "com/app/AppmyUI5/model/formatter"],
+    /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
      * @param {typeof sap.ui.core.routing.History} History
      * @param {typeof sap.ui.core.UIComponent} UIComponent
      */
-    function (Controller, History, UIComponent, formatter) {
+     function (Controller, History, UIComponent, formatter) {
         "use strict";
 
         return Controller.extend("com.app.AppmyUI5.controller.BaseController", {
@@ -68,3 +71,4 @@ sap.ui.define(
         });
     }
 );
+
